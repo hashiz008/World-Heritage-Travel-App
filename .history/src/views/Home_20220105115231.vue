@@ -1,6 +1,6 @@
 <template>
-    <div class="backImgDiv vh-100 vw-100 mb-10">
-        <div class="backImg h-20">
+    <div class="backImgDiv">
+        <div class="backImg">
             <div class="test">
                 <router-link to="/about"
                     >さあ！世界の旅の始まりです！</router-link
@@ -25,8 +25,7 @@ export default {
 <style scoped="lang">
 .backImg {
     background-image: url("../assets/startPage.png");
-    /* width:1000px;
-    height:700px; */
+    width:100px;
 }
 .test {
     font-size: 30px;

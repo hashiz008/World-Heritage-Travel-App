@@ -1,7 +1,7 @@
 <template>
     <div class="backImgDiv vh-100 vw-100 mb-10">
         <div class="backImg h-20">
-            <div class="test">
+            <div class="tes">
                 <router-link to="/about"
                     >さあ！世界の旅の始まりです！</router-link
                 >

@@ -1,5 +1,5 @@
 <template>
-    <div class="backImgDiv vh-100 vw-100 mb-10">
+    <div class="backImgDiv vh-100 vw-100 pb-10">
         <div class="backImg h-20">
             <div class="test">
                 <router-link to="/about"

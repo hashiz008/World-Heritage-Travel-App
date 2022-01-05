@@ -2,7 +2,7 @@
     <div class="backImgDiv">
         <div class="backImg">
             <div class="titleDiv flex justify-center pt-20">
-                <h1 class="title text-4xl">Wrorld Hertige</h1>
+                <h1 class="title text-3xl font-normal">Wrorld Hertige</h1>
             </div>
             <div class="startBtn flex justify-center">
                 <router-link
@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style scoped="lang">
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@700&family=Playfair+Display:wght@500&display=swap');
 .backImgDiv {
     margin-top: -60px;
 }
@@ -42,6 +41,7 @@ export default {
 }
 .title {
     font-family: "Libre Baskerville", serif;
+    font-family: "M PLUS 2", sans-serif;
 }
 .startBtn {
     font-size: 30px;

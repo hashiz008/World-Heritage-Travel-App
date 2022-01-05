@@ -2,7 +2,7 @@
     <div class="backImgDiv">
         <div class="backImg">
             <div class="titleDiv flex justify-center pt-20">
-                <h1 class="title text-4xl">Wrorld Hertige</h1>
+                <h1 class="title text-3xl">Wrorld Hertige</h1>
             </div>
             <div class="startBtn flex justify-center">
                 <router-link

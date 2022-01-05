@@ -1,0 +1,37 @@
+<template>
+    <div class="backImgDiv vw-100 mb-10">
+        <div class="backImg vw-100 vh-100">
+            <div class="test">
+                <router-link to="/about"
+                    >さあ！世界の旅の始まりです！</router-link
+                >
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+
+export default {
+    name: "Home",
+    components: {
+        // HelloWorld
+    },
+};
+</script>
+
+<style scoped="lang">
+.backImgDiv {
+  height:-10px;
+}
+.backImg {
+    background-image: url("../assets/startPage.png");
+    width: 100%;
+    height: 100%;
+}
+.test {
+    font-size: 30px;
+}
+</style>

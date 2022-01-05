@@ -2,12 +2,10 @@
     <div class="backImgDiv">
         <div class="backImg">
             <div class="titleDiv flex justify-center pt-20">
-                <h1 class="title text-4xl">Wrorld Hertige</h1>
+                <h1 class="title text-3xl font-normal">Wrorld Hertige</h1>
             </div>
             <div class="startBtn flex justify-center">
-                <router-link
-                    class="text-gray-100 hover:text-gray-400 hover:opacity-50 hover:bg-gray-300 rounded-full py-2 px-4 border border-white"
-                    to="/about"
+                <router-link class="text-gray-100 hover:text-gray-400 hover:opacity-50 hover:bg-gray-300 rounded-full py-2 px-4  border border-white" to="/about"
                     >さあ！世界の旅の始まりです！</router-link
                 >
             </div>
@@ -28,7 +26,6 @@ export default {
 </script>
 
 <style scoped="lang">
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@700&family=Playfair+Display:wght@500&display=swap');
 .backImgDiv {
     margin-top: -60px;
 }
@@ -41,10 +38,10 @@ export default {
     height: 825px;
 }
 .title {
-    font-family: "Libre Baskerville", serif;
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=M+PLUS+2:wght@700&display=swap')
 }
 .startBtn {
     font-size: 30px;
-    margin-top: 20rem;
+    margin-top:20rem;
 }
 </style>

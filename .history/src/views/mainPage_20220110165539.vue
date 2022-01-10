@@ -19,16 +19,16 @@
             </div>
             <div class="btnBackDisplay bg-gray-400 h-24">
                 <!-- <input v-model="number" /> -->
-                <button @click="number += '1'" value="one">1</button>
-                <button @click="number += '2'" value="2">2</button>
-                <button @click="number += '3'" value="3">3</button>
-                <button @click="number += '4'" value="4">4</button>
-                <button @click="number += '5'" value="5">5</button>
-                <button @click="number += '6'" value="6">6</button>
-                <button @click="number += '7'" value="7">7</button>
-                <button @click="number += '8'" value="8">8</button>
-                <button @click="number += '9'" value="9">9</button>
-                <button @click="number += '0'" value="0">0</button>
+                <button @click="ones()" v-bind:value="one">1</button>
+                <button @click="two(this.id)" value="2">2</button>
+                <button @click="nums(this.id)" value="3">3</button>
+                <button @click="nums(this.id)" value="4">4</button>
+                <button @click="nums(this.id)" value="5">5</button>
+                <button @click="nums(this.id)" value="6">6</button>
+                <button @click="nums(this.id)" value="7">7</button>
+                <button @click="nums(this.id)" value="8">8</button>
+                <button @click="nums(this.id)" value="9">9</button>
+                <button @click="nums(this.id)" value="0">0</button>
                 <button @click="result">result</button>
             </div>
             <button
@@ -54,9 +54,12 @@ export default defineComponent({
         };
     },
     methods: {
-        result() {
-            console.log(this.number);
+        ones() {
+            this.number += "1";
         },
+        //     // result() {
+        //     //     console.log(this.one);
+        //     // },
     },
 });
 </script>

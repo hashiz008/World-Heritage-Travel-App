@@ -19,16 +19,16 @@
             </div>
             <div class="btnBackDisplay bg-gray-400 h-24">
                 <!-- <input v-model="number" /> -->
-                <button @click="number += '1'" value="one">1</button>
-                <button @click="number += '2'" value="2">2</button>
-                <button @click="number += '3'" value="3">3</button>
-                <button @click="number += '4'" value="4">4</button>
-                <button @click="number += '5'" value="5">5</button>
-                <button @click="number += '6'" value="6">6</button>
-                <button @click="number += '7'" value="7">7</button>
-                <button @click="number += '8'" value="8">8</button>
-                <button @click="number += '9'" value="9">9</button>
-                <button @click="number += '0'" value="0">0</button>
+                <button @click="nums()" v-bind:value="one">1</button>
+                <!-- <button id="two" @click="nums(this.id)" value="2">2</button>
+                <button id="three" @click="nums(this.id)" value="3">3</button>
+                <button id="four" @click="nums(this.id)" value="4">4</button>
+                <button id="five" @click="nums(this.id)" value="5">5</button>
+                <button id="six" @click="nums(this.id)" value="6">6</button>
+                <button id="seven" @click="nums(this.id)" value="7">7</button>
+                <button id="eight" @click="nums(this.id)" value="8">8</button>
+                <button id="nine" @click="nums(this.id)" value="9">9</button>
+                <button id="zero" @click="nums(this.id)" value="0">0</button> -->
                 <button @click="result">result</button>
             </div>
             <button
@@ -43,21 +43,30 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import imgData from "@/components/imgData";
-
 export default defineComponent({
-    name: "MainPage",
-    data() {
+    name:"MainPage",
+    setup() {
+        // let aa = {nzum:0}
+        const num = () => {
+            this.number
+        }
         return {
             imgdata: imgData,
             one: 1,
-            number: "",
+            number:1,
         };
     },
-    methods: {
-        result() {
-            console.log(this.number);
-        },
-    },
+    // methods: {
+    //     data() {
+    //         console.log(this.imgdata);
+    //     },
+    //     const num = () =>  {
+    //         return this.number++;
+    //     },
+    //     // result() {
+    //     //     console.log(this.one);
+    //     // },
+    // },
 });
 </script>
 

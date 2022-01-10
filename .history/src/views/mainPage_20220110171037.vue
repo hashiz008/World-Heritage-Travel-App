@@ -19,7 +19,9 @@
             </div>
             <div class="btnBackDisplay bg-gray-400 h-24">
                 <!-- <input v-model="number" /> -->
-                <button @click="number += '1'" value="one">1</button>
+                <button @click="ones((number += '1'))" v-bind:value="one">
+                    1
+                </button>
                 <button @click="number += '2'" value="2">2</button>
                 <button @click="number += '3'" value="3">3</button>
                 <button @click="number += '4'" value="4">4</button>
@@ -29,7 +31,7 @@
                 <button @click="number += '8'" value="8">8</button>
                 <button @click="number += '9'" value="9">9</button>
                 <button @click="number += '0'" value="0">0</button>
-                <button @click="result">result</button>
+                <button @click="">result</button>
             </div>
             <button
                 class="text-white text-2xl rounded-full download bg-gray-400 h-20"
@@ -55,7 +57,7 @@ export default defineComponent({
     },
     methods: {
         result() {
-            console.log(this.number);
+            console.log();
         },
     },
 });

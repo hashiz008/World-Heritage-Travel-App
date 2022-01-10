@@ -11,24 +11,23 @@
                 <router-link to="/">Home</router-link>
             </div> -->
             <div class="imgNums mt-40 lg:mt-10 lg:ml-64">
-                <h1 class="text-2xl font-bold">Number:{{ number }}</h1>
+                <h1 class="text-2xl font-bold">Number:{{num}}</h1>
             </div>
             <div class="imgDataDisplay mt-5 bg-gray-800 w-32 h-20">
-                <!-- <h4 class="pt-2 text-white">{{ names }}</h4> -->
+                <h4 class="pt-2 text-white">{{ name }}</h4>
                 <h4 class="pt-8 pr-20 text-white">by:{{ country }}</h4>
             </div>
             <div class="btnBackDisplay bg-gray-400 h-24">
-                <!-- <input v-model="number" /> -->
-                <button @click="number += '1'" value="one">1</button>
-                <button @click="number += '2'" value="2">2</button>
-                <button @click="number += '3'" value="3">3</button>
-                <button @click="number += '4'" value="4">4</button>
-                <button @click="number += '5'" value="5">5</button>
-                <button @click="number += '6'" value="6">6</button>
-                <button @click="number += '7'" value="7">7</button>
-                <button @click="number += '8'" value="8">8</button>
-                <button @click="number += '9'" value="9">9</button>
-                <button @click="number += '0'" value="0">0</button>
+                <button  v-bind:value="one">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="0">0</button>
                 <button @click="result">result</button>
             </div>
             <button
@@ -43,20 +42,20 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import imgData from "@/components/imgData";
-
 export default defineComponent({
-    name: "MainPage",
-    data() {
+    setup() {
         return {
             imgdata: imgData,
-            one: 1,
-            number: "",
+            one:1
         };
     },
     methods: {
-        result() {
-            console.log(this.number);
+        data() {
+            console.log(this.imgdata);
         },
+        result() {
+            console.log(this.one)
+        }
     },
 });
 </script>

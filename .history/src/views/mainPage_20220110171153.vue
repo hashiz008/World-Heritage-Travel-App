@@ -55,7 +55,7 @@ export default defineComponent({
     },
     methods: {
         result() {
-            console.log(this.number);
+            console.log();
         },
     },
 });

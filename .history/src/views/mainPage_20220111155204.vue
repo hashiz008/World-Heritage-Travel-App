@@ -10,16 +10,14 @@
             <!-- <div class="Homebtn">
                 <router-link to="/">Home</router-link>
             </div> -->
-            <div
-                class="imgNumsDisplay border-4 border-yellow-700 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
-            >
-                <h1 class="text-white pr-40 pt-1 text-2xl font-bold">
+            <div class="imgNumsDisplay border-2 border-blue-600 bg-gray-700 w-64 h-11 ml-40 lg:mt-10 lg:ml-64">
+                <h1 class="text-white pr-40 pt-2 text-2xl font-bold">
                     Number:{{ number }}
                 </h1>
             </div>
-            <div class="imgDataDisplay border-4 border-yellow-700 mt-5 bg-gray-800 w-64 h-20">
+            <div class="imgDataDisplay mt-5 bg-gray-800 w-32 h-20">
                 <!-- <h4 class="pt-2 text-white">{{ names }}</h4> -->
-                <h4 class="pt-10 pr-48 font-semibold text-xl text-white">by:{{ country }}</h4>
+                <h4 class="pt-8 pr-20 text-white">by:{{ country }}</h4>
             </div>
             <div
                 class="btnBackDisplay border-4 border-yellow-800 rounded-3xl bg-gray-400"
@@ -132,13 +130,11 @@
                     </button>
                 </div>
             </div>
-            <div class="downBtnDisplay">
-                <button
-                    class="text-white font-bold text-4xl rounded-full downloadBtn border-4 border-indigo-600 bg-indigo-300 h-20"
-                >
-                    Download
-                </button>
-            </div>
+            <button
+                class="text-white font-bold text-4xl rounded-full downloadBtn border-4 border-indigo-600 bg-indigo-300 h-20"
+            >
+                Download
+            </button>
         </div>
     </div>
 </template>
@@ -165,7 +161,7 @@ export default defineComponent({
 </script>
 
 <style scoped="lang">
-@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap');
 .backgroundDiv {
     margin-top: -60px;
 }
@@ -322,8 +318,7 @@ export default defineComponent({
     }
     .imgDataDisplay {
         margin-left: auto;
-        margin-right: 175px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
+        margin-right: auto;
     }
     .btnBackDisplay {
         margin-left: auto;
@@ -347,7 +342,7 @@ export default defineComponent({
     }
 }
 @media screen and (min-width: 769px) {
-    .imgNumsDisplay {
+      .imgNumsDisplay {
         font-family: "Luxurious Roman", cursive;
         margin-left: 43rem;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
@@ -355,8 +350,7 @@ export default defineComponent({
     .imgDataDisplay {
         /* display: flex;
         justify-content: end; */
-         /* margin-right: 175px; */
-        margin-left: 860px;
+        margin-left: 920px;
         margin-bottom: -50px;
     }
     .btnBackDisplay {
@@ -365,10 +359,6 @@ export default defineComponent({
         width: 25rem;
         height: 205px;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .downBtnDisplay {
-        margin-top:-40px;
-        margin-right:50px;
     }
     .downloadBtn {
         margin-left: 720px;

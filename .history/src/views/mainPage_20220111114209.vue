@@ -10,24 +10,18 @@
             <!-- <div class="Homebtn">
                 <router-link to="/">Home</router-link>
             </div> -->
-            <div
-                class="imgNumsDisplay border-4 border-yellow-700 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
-            >
-                <h1 class="text-white pr-40 pt-1 text-2xl font-bold">
-                    Number:{{ number }}
-                </h1>
+            <div class="imgNums lg:mt-10 lg:ml-64">
+                <h1 class="text-2xl font-bold">Number:{{ number }}</h1>
             </div>
-            <div class="imgDataDisplay border-4 border-yellow-700 mt-5 bg-gray-800 w-64 h-20">
+            <div class="imgDataDisplay mt-5 bg-gray-800 w-32 h-20">
                 <!-- <h4 class="pt-2 text-white">{{ names }}</h4> -->
-                <h4 class="pt-10 pr-48 font-semibold text-xl text-white">by:{{ country }}</h4>
+                <h4 class="pt-8 pr-20 text-white">by:{{ country }}</h4>
             </div>
-            <div
-                class="btnBackDisplay border-4 border-yellow-800 rounded-3xl bg-gray-400"
-            >
+            <div class="btnBackDisplay rounded-3xl bg-gray-400">
                 <!-- <input v-model="number" /> -->
-                <div class="oneBtnDisplay pt-2">
+                <div class="oneBtnDisplay pt-3">
                     <button
-                        class="font-medium text-white onesBtn text-3xl text-white border-2 border-blue-600 bg-blue-400 rounded-full w-10 h-10"
+                        class="onesBtn text-2xl rounded-full bg-blue600 w-10 h-10"
                         @click="number += '1'"
                         value="one"
                     >
@@ -36,7 +30,7 @@
                 </div>
                 <div class="twoBtnDisplay">
                     <button
-                        class="twoBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="twoBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '2'"
                         value="2"
                     >
@@ -45,7 +39,7 @@
                 </div>
                 <div class="threeBtnDisplay">
                     <button
-                        class="threeBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="threeBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '3'"
                         value="3"
                     >
@@ -54,7 +48,7 @@
                 </div>
                 <div class="fourBtnDisplay">
                     <button
-                        class="fourBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="fourBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '4'"
                         value="4"
                     >
@@ -63,7 +57,7 @@
                 </div>
                 <div class="fiveBtnDisplay">
                     <button
-                        class="fiveBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="fiveBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '5'"
                         value="5"
                     >
@@ -72,7 +66,7 @@
                 </div>
                 <div class="sixBtnDisplay mr-64">
                     <button
-                        class="sixBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="sixBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '6'"
                         value="6"
                     >
@@ -81,7 +75,7 @@
                 </div>
                 <div class="sevenBtnDisplay">
                     <button
-                        class="sevenBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="sevenBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '7'"
                         value="7"
                     >
@@ -90,7 +84,7 @@
                 </div>
                 <div class="eightBtnDisplay mr-1">
                     <button
-                        class="eightBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="eightBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '8'"
                         value="8"
                     >
@@ -99,7 +93,7 @@
                 </div>
                 <div class="nineBtnDisplay">
                     <button
-                        class="nineBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="nineBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '9'"
                         value="9"
                     >
@@ -108,7 +102,7 @@
                 </div>
                 <div class="zeroBtnDisplay">
                     <button
-                        class="zeroBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
+                        class="zeroBtn text-2xl rounded-full bg-blue-500 w-10 h-10"
                         @click="number += '0'"
                         value="0"
                     >
@@ -117,7 +111,7 @@
                 </div>
                 <div class="resultBtnDisplay mr-32 mt-3">
                     <button
-                        class="resultBtn rounded-lg font-medium text-2xl text-white border-2 border-blue-600 bg-blue-400 w-20 h-9"
+                        class="resultBtn rounded-lg text-xl bg-blue-500 w-16 h-8"
                         @click="result"
                     >
                         Result
@@ -125,20 +119,18 @@
                 </div>
                 <div class="delBtnDisplay ml-32">
                     <button
-                        class="delBtn rounded-lg font-medium text-2xl text-white border-2 border-blue-600 bg-blue-400 w-20 h-9"
+                        class="delBtn rounded-lg text-xl bg-blue-500 w-12 h-8"
                         @click="result"
                     >
                         Del
                     </button>
                 </div>
             </div>
-            <div class="downBtnDisplay">
-                <button
-                    class="text-white font-bold text-4xl rounded-full downloadBtn border-4 border-indigo-600 bg-indigo-300 h-20"
-                >
-                    Download
-                </button>
-            </div>
+            <button
+                class="text-white text-2xl rounded-full download bg-gray-400 h-20"
+            >
+                Download
+            </button>
         </div>
     </div>
 </template>
@@ -165,7 +157,6 @@ export default defineComponent({
 </script>
 
 <style scoped="lang">
-@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
 .backgroundDiv {
     margin-top: -60px;
 }
@@ -304,7 +295,7 @@ export default defineComponent({
     box-shadow: none;
 }
 .delBtnDisplay {
-    margin-top: -45px;
+    margin-top: -40px;
 }
 .delBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -315,15 +306,12 @@ export default defineComponent({
     box-shadow: none;
 }
 @media screen and (max-width: 768px) {
-    .imgNumsDisplay {
-        font-family: "Luxurious Roman", cursive;
+    .imgNums {
         margin-top: 9rem;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
     }
     .imgDataDisplay {
         margin-left: auto;
-        margin-right: 175px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
+        margin-right: auto;
     }
     .btnBackDisplay {
         margin-left: auto;
@@ -333,30 +321,18 @@ export default defineComponent({
         height: 205px;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
     }
-    .downloadBtn {
+    .download {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         width: 25rem;
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .downloadBtn:active {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-        box-shadow: none;
     }
 }
 @media screen and (min-width: 769px) {
-    .imgNumsDisplay {
-        font-family: "Luxurious Roman", cursive;
-        margin-left: 43rem;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
     .imgDataDisplay {
         /* display: flex;
         justify-content: end; */
-         /* margin-right: 175px; */
-        margin-left: 860px;
+        margin-left: 920px;
         margin-bottom: -50px;
     }
     .btnBackDisplay {
@@ -364,22 +340,11 @@ export default defineComponent({
         margin-top: 100px;
         width: 25rem;
         height: 205px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
     }
-    .downBtnDisplay {
-        margin-top:-40px;
-        margin-right:50px;
-    }
-    .downloadBtn {
+    .download {
         margin-left: 720px;
         margin-top: 90px;
         width: 25rem;
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .downloadBtn:active {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-        box-shadow: none;
     }
 }
 </style>

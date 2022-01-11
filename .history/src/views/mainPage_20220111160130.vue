@@ -11,15 +11,15 @@
                 <router-link to="/">Home</router-link>
             </div> -->
             <div
-                class="imgNumsDisplay border-4 border-yellow-700 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
+                class="imgNumsDisplay border-2 border-yellow-700 bg-gray-700 w-64 h-11 ml-40 lg:mt-10 lg:ml-64"
             >
                 <h1 class="text-white pr-40 pt-1 text-2xl font-bold">
                     Number:{{ number }}
                 </h1>
             </div>
-            <div class="imgDataDisplay border-4 border-yellow-700 mt-5 bg-gray-800 w-64 h-20">
+            <div class="imgDataDisplay mt-5 bg-gray-800 w-32 h-20">
                 <!-- <h4 class="pt-2 text-white">{{ names }}</h4> -->
-                <h4 class="pt-10 pr-48 font-semibold text-xl text-white">by:{{ country }}</h4>
+                <h4 class="pt-8 pr-20 text-white">by:{{ country }}</h4>
             </div>
             <div
                 class="btnBackDisplay border-4 border-yellow-800 rounded-3xl bg-gray-400"
@@ -27,7 +27,7 @@
                 <!-- <input v-model="number" /> -->
                 <div class="oneBtnDisplay pt-2">
                     <button
-                        class="font-medium text-white onesBtn text-3xl text-white border-2 border-blue-600 bg-blue-400 rounded-full w-10 h-10"
+                        class="font-medium text-white onesBtn text-3xl text-white border-4 border-blue-600 bg-blue-400 rounded-full w-10 h-10"
                         @click="number += '1'"
                         value="one"
                     >
@@ -322,8 +322,7 @@ export default defineComponent({
     }
     .imgDataDisplay {
         margin-left: auto;
-        margin-right: 175px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
+        margin-right: auto;
     }
     .btnBackDisplay {
         margin-left: auto;
@@ -355,8 +354,7 @@ export default defineComponent({
     .imgDataDisplay {
         /* display: flex;
         justify-content: end; */
-         /* margin-right: 175px; */
-        margin-left: 860px;
+        margin-left: 920px;
         margin-bottom: -50px;
     }
     .btnBackDisplay {

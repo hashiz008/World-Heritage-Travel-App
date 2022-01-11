@@ -19,7 +19,7 @@
             </div>
             <div class="imgDataDisplay border-4 border-yellow-700 mt-5 bg-gray-800 w-64 h-20">
                 <!-- <h4 class="pt-2 text-white">{{ names }}</h4> -->
-                <h4 class="pt-10 pr-48 font-semibold text-xl text-white">by:{{ country }}</h4>
+                <h4 class="pt-10 pr-48 text-xl text-white">by:{{ country }}</h4>
             </div>
             <div
                 class="btnBackDisplay border-4 border-yellow-800 rounded-3xl bg-gray-400"
@@ -322,7 +322,7 @@ export default defineComponent({
     }
     .imgDataDisplay {
         margin-left: auto;
-        margin-right: 175px;
+        margin-right: ;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
     }
     .btnBackDisplay {
@@ -355,8 +355,7 @@ export default defineComponent({
     .imgDataDisplay {
         /* display: flex;
         justify-content: end; */
-         /* margin-right: 175px; */
-        margin-left: 860px;
+        margin-left: 920px;
         margin-bottom: -50px;
     }
     .btnBackDisplay {

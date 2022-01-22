@@ -3,8 +3,8 @@
         <div class="backImg">
             <div class="inStyle">
                 <div class="titleDiv mx-auto">
-                    <h1 class="title text-4xl text-gray-800 font-bold">
-                        World Heritage App
+                    <h1 class="text-4xl font-normal">
+                        Images of World Heritage
                     </h1>
                 </div>
                 <div class="imageDiv">
@@ -19,16 +19,16 @@
                 </div>
                 <div
                     id="imgNums"
-                    class="imgNumsDisplay border-8 border-gray-400 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
+                    class="imgNumsDisplay border-4 border-yellow-700 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
                 >
                     <h1
-                        class="resultNumber text-white pr-40  text-2xl font-bold"
+                        class="resultNumber text-white pr-40 pt-1 text-2xl font-bold"
                     >
                         Number:{{ number }}
                     </h1>
                 </div>
                 <div
-                    class="imgDataDisplay border-8 border-gray-400 mt-5 pt-1 bg-gray-800 h-20"
+                    class="imgDataDisplay border-4 border-yellow-700 mt-5 bg-gray-800 h-20"
                 >
                     <!-- <div> -->
                     <h4 class="font-semibold text-2xl text-white">
@@ -49,12 +49,12 @@
                 </div>
                 <div
                     id="nums"
-                    class="btnBackDisplay border-8 border-gray-400 rounded-3xl"
+                    class="btnBackDisplay border-4 border-yellow-800 rounded-3xl bg-gray-400"
                 >
                     <!-- <input v-model="number" /> -->
                     <div class="oneBtnDisplay pt-2">
                         <button
-                            class="font-medium text-white onesBtn text-3xl text-white bg-gray-900 rounded-full w-10 h-10"
+                            class="font-medium text-white onesBtn text-3xl text-white border-2 border-blue-600 bg-blue-400 rounded-full w-10 h-10"
                             @click="number += '1'"
                             value="one"
                         >
@@ -63,7 +63,7 @@
                     </div>
                     <div class="twoBtnDisplay">
                         <button
-                            class="twoBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="twoBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '2'"
                             value="2"
                         >
@@ -72,7 +72,7 @@
                     </div>
                     <div class="threeBtnDisplay">
                         <button
-                            class="threeBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="threeBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '3'"
                             value="3"
                         >
@@ -81,7 +81,7 @@
                     </div>
                     <div class="fourBtnDisplay">
                         <button
-                            class="fourBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="fourBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '4'"
                             value="4"
                         >
@@ -90,7 +90,7 @@
                     </div>
                     <div class="fiveBtnDisplay">
                         <button
-                            class="fiveBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="fiveBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '5'"
                             value="5"
                         >
@@ -99,7 +99,7 @@
                     </div>
                     <div class="sixBtnDisplay mr-64">
                         <button
-                            class="sixBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="sixBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '6'"
                             value="6"
                         >
@@ -108,7 +108,7 @@
                     </div>
                     <div class="sevenBtnDisplay">
                         <button
-                            class="sevenBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="sevenBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '7'"
                             value="7"
                         >
@@ -117,7 +117,7 @@
                     </div>
                     <div class="eightBtnDisplay mr-1">
                         <button
-                            class="eightBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="eightBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '8'"
                             value="8"
                         >
@@ -126,7 +126,7 @@
                     </div>
                     <div class="nineBtnDisplay">
                         <button
-                            class="nineBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="nineBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '9'"
                             value="9"
                         >
@@ -135,7 +135,7 @@
                     </div>
                     <div class="zeroBtnDisplay">
                         <button
-                            class="zeroBtn font-medium text-3xl rounded-full text-white bg-gray-900 w-10 h-10"
+                            class="zeroBtn font-medium text-3xl rounded-full text-white border-2 border-blue-600 bg-blue-400 w-10 h-10"
                             @click="number += '0'"
                             value="0"
                         >
@@ -144,7 +144,7 @@
                     </div>
                     <div class="resultBtnDisplay mr-32 mt-3">
                         <button
-                            class="resultBtn rounded-lg font-medium text-2xl text-white bg-gray-900 w-20 h-9"
+                            class="resultBtn rounded-lg font-medium text-2xl text-white border-2 border-blue-600 bg-blue-400 w-20 h-9"
                             @click="result"
                         >
                             Result
@@ -152,7 +152,7 @@
                     </div>
                     <div class="delBtnDisplay ml-32">
                         <button
-                            class="delBtn rounded-lg font-medium text-2xl text-white bg-gray-900 w-20 h-9"
+                            class="delBtn rounded-lg font-medium text-2xl text-white border-2 border-blue-600 bg-blue-400 w-20 h-9"
                             @click="del"
                         >
                             Del
@@ -186,14 +186,14 @@ export default defineComponent({
     data() {
         return {
             keyword: "" as string,
-            href:"https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9" as string,
+            href:"https://www.goole.com",
             imgdata: imgData,
             by: true as boolean,
             downDisable: true as boolean,
             number: "0" as string,
             img: "https://cdn.pixabay.com/photo/2020/07/23/21/34/arc-de-triomphe-5432392_1280.jpg" as string,
             placeName: "凱旋門" as string,
-            country: "フランス共和国" as string,
+            country: "フランス" as string,
             hrefs: "" as string,
             down: "" as string,
             myLatLng: { lat: 48.873, lng: 2.295 } as {
@@ -219,14 +219,12 @@ export default defineComponent({
             let image: string | string = "";
             let placeName: string | string = "";
             let nation: string | string = "";
-            let wiki: string | string = "";
 
             for (let i in this.imgdata) {
                 if (this.imgdata[i].num == Number(this.number)) {
                     image += this.imgdata[i].url;
                     placeName += this.imgdata[i].placeName;
                     nation += this.imgdata[i].country;
-                    wiki += this.imgdata[i].wiki;
                     // } else {
                     //     console.log(this.by = false)
                     //     if(window.confirm("0~9以内で選択してください!")) {
@@ -252,7 +250,6 @@ export default defineComponent({
             this.placeName = placeName;
             this.country = nation;
             initMap();
-            this.href = wiki
         },
         del(): void {
             this.number = this.number.slice(0, -1);
@@ -304,13 +301,9 @@ function initMap(): void {
 </script>
 
 <style scoped="lang">
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
 .backgroundDiv {
     margin-top: -60px;
-}
-.title {
-    font-family: 'Merriweather', serif;
 }
 .backImg {
     background-image: url("../assets/mainPage.png");
@@ -498,9 +491,8 @@ function initMap(): void {
         margin-right: auto;
         margin-top: 20px;
         width: 23rem;
-        height: 210px;
+        height: 205px;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg")
     }
     .downloadBtn {
         margin-left: auto;
@@ -532,7 +524,7 @@ function initMap(): void {
         width: 400px;
         height: 300px;
         border-width: 10px;
-        border-color: #464646;
+        border-color: rgba(129, 70, 2, 0.966);
     }
     .imgNumsDisplay {
         margin-top: -30rem;
@@ -567,9 +559,8 @@ function initMap(): void {
         margin-left: 500px;
         margin-top: 50px;
         width: 22rem;
-        height: 210px;
+        height: 205px;
         box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg")
     }
     .downBtnDisplay {
         display: flex;

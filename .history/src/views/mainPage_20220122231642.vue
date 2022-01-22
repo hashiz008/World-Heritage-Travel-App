@@ -309,9 +309,6 @@ function initMap(): void {
 .backgroundDiv {
     margin-top: -60px;
 }
-.title {
-    font-family: 'Merriweather', serif;
-}
 .backImg {
     background-image: url("../assets/mainPage.png");
     background-repeat: no-repeat;

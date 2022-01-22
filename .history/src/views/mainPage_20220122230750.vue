@@ -3,7 +3,7 @@
         <div class="backImg">
             <div class="inStyle">
                 <div class="titleDiv mx-auto">
-                    <h1 class="title text-4xl text-gray-800 font-bold">
+                    <h1 class="text-4xl font-normal">
                         World Heritage App
                     </h1>
                 </div>
@@ -304,13 +304,9 @@ function initMap(): void {
 </script>
 
 <style scoped="lang">
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
 .backgroundDiv {
     margin-top: -60px;
-}
-.title {
-    font-family: 'Merriweather', serif;
 }
 .backImg {
     background-image: url("../assets/mainPage.png");

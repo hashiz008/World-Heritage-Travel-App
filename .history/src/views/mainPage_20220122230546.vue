@@ -3,8 +3,8 @@
         <div class="backImg">
             <div class="inStyle">
                 <div class="titleDiv mx-auto">
-                    <h1 class="title text-4xl text-gray-800 font-bold">
-                        World Heritage App
+                    <h1 class="text-4xl font-normal">
+                        Images of World Heritage
                     </h1>
                 </div>
                 <div class="imageDiv">
@@ -19,23 +19,23 @@
                 </div>
                 <div
                     id="imgNums"
-                    class="imgNumsDisplay border-8 border-gray-400 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
+                    class="imgNumsDisplay border-4 border-gray-400 bg-gray-800 w-64 h-12 ml-40 lg:mt-10 lg:ml-64"
                 >
                     <h1
-                        class="resultNumber text-white pr-40  text-2xl font-bold"
+                        class="resultNumber text-white pr-40 pt-1 text-2xl font-bold"
                     >
                         Number:{{ number }}
                     </h1>
                 </div>
                 <div
-                    class="imgDataDisplay border-8 border-gray-400 mt-5 pt-1 bg-gray-800 h-20"
+                    class="imgDataDisplay border-4 border-yellow-700 mt-5 pt-1 bg-gray-800 h-20"
                 >
                     <!-- <div> -->
                     <h4 class="font-semibold text-2xl text-white">
                         {{ placeName }}
                     </h4>
                     <!-- </div> -->
-                    <div class="nation">
+                    <div class="nation pt-2">
                         <a
                             :href="href"
                             v-show="by"
@@ -304,13 +304,9 @@ function initMap(): void {
 </script>
 
 <style scoped="lang">
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
 .backgroundDiv {
     margin-top: -60px;
-}
-.title {
-    font-family: 'Merriweather', serif;
 }
 .backImg {
     background-image: url("../assets/mainPage.png");

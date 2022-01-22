@@ -309,7 +309,7 @@ function initMap(): void {
 .backgroundDiv {
     margin-top: -60px;
 }
-.title {
+.titile {
     font-family: 'Merriweather', serif;
 }
 .backImg {

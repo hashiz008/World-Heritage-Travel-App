@@ -1,0 +1,22 @@
+import { mount } from '@vue/test-utils';
+const App = {
+  template: `
+  <div>
+  <div>Hello World</div>
+  </div>
+  `
+}
+
+test("test App Component", function () {
+  const wrapper = mount(App);
+  expect(wrapper.text()).toBe('Hello')
+  console.log(wrapper)
+})
+// test("test App Component", function () {
+//   const wrapper = mount(App, {
+//     props: {
+//       msg: "World"
+//     }
+//   });
+//   expect(wrapper.text()).toBe('Hello')
+// })

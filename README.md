@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 世界遺産探検アプリです。
 Vue.js+TypeScriptで作成しました。
 ## Description

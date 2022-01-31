@@ -1202,7 +1202,7 @@ function initMap(): void {
         border: double 14px #69635d;
     }
     .imgNumsDisplay {
-        padding-right: 80px;
+        padding-right:70px;
         margin-top: -34rem;
         font-family: "Luxurious Roman", cursive;
         margin-left: 530px;

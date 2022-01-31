@@ -7,8 +7,4 @@ https://world-heritage-travel-app.vercel.app/
 ## Demo
 <img width="1440" alt="スクリーンショット 2022-01-31 14 36 04" src="https://user-images.githubusercontent.com/63139730/151744135-d429faef-6f92-43b8-a078-4c70c6fa01ca.png">
 ## 使用技術
- * Vue3
- * TypeScript
- * VueRouter
- * Tailwind CSS
- * Maps JavaScript API 
+ 

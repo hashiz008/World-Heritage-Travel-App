@@ -6,4 +6,4 @@ Vue.js+TypeScriptで作成しました。
 ## URL
 https://world-heritage-travel-app.vercel.app/
 ## Demo
-<img width="1440" alt="スクリーンショット 2022-01-31 11 03 24" src="https://user-images.githubusercontent.com/63139730/151729634-dcf2449f-3736-4f7b-be0d-be4a12bd360e.png">
+<img width="1440" alt="スクリーンショット 2022-01-31 14 36 04" src="https://user-images.githubusercontent.com/63139730/151744135-d429faef-6f92-43b8-a078-4c70c6fa01ca.png">

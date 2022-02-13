@@ -1184,13 +1184,13 @@ function initMap(): void {
 }
 @media screen and (min-width: 1201px) {
     .titleDiv {
-        padding-top: 3rem;
+        padding-top: 1rem;
         margin-right: 20%;
     }
     .backImg {
         display: flex;
         justify-content: center;
-        height:1200px;
+        height:100px;
     }
     .inStyle {
         padding-left: 150px;

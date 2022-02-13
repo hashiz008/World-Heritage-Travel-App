@@ -1190,7 +1190,7 @@ function initMap(): void {
     .backImg {
         display: flex;
         justify-content: center;
-        height:1200px;
+        height:1300px;
     }
     .inStyle {
         padding-left: 150px;

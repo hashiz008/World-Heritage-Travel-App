@@ -1184,7 +1184,7 @@ function initMap(): void {
 }
 @media screen and (min-width: 1201px) {
     .titleDiv {
-        padding-top: 3rem;
+        padding-top: 1rem;
         margin-right: 20%;
     }
     .backImg {

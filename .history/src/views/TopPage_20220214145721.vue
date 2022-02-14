@@ -79,7 +79,7 @@ export default {
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 1100px;
+    height: 1205px;
 }
 .menu {
     position: fixed;

@@ -973,7 +973,6 @@ function initMap(): void {
         padding-left: 70px;
         display: flex;
         justify-content: center;
-         height:1200px;
     }
     .inStyle {
         padding-right: 10px;

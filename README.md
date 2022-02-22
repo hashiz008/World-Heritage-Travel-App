@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/63139730/152626031-fe7b1da9-eb34-46ab-
 **このポートフォリオは好きな数字を選んで世界遺産を選択できるアプリです。トップページは最初のボタンを押すと画像とマーカーされたGoogleMapがあり、好きな数字を選択すると選択された画像,その画像がある場所にマーカーされさらに世界遺産名と国名が表示されます。遺産名をクリックするとその世界遺産に関するページに飛ぶことが出来ます。また、、ダウンロードボタンを押すと画像がその画像のあるページでダウンロード出来ます。**
 
 ## Reference
-<a href='https://world-heritage-travel-app.vercel.app/'>さあ！世界を旅しよう！</a>
+**<a href='https://world-heritage-travel-app.vercel.app/'>さあ！世界を旅しよう！</a>**
 
 ## Requirement
  * Vue3
@@ -21,5 +21,6 @@ https://user-images.githubusercontent.com/63139730/152626031-fe7b1da9-eb34-46ab-
  * VueRouter
  * Tailwind CSS
  * Maps JavaScript API 
+
 ## Author
-<a href='https://github.com/hashiz008'>hashiz008</a>
+**<a href='https://github.com/hashiz008'>hashiz008</a>**

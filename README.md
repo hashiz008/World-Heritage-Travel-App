@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/63139730/152626031-fe7b1da9-eb34-46ab-
 ## Reference
 <a href='https://world-heritage-travel-app.vercel.app/'>さあ！世界を旅しよう！</a>
 
-## 使用技術
+## Requirement
  * Vue3
  * TypeScript
  * VueRouter

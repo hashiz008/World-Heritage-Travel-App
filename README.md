@@ -22,3 +22,4 @@ https://user-images.githubusercontent.com/63139730/152626031-fe7b1da9-eb34-46ab-
  * Tailwind CSS
  * Maps JavaScript API 
 ## Author
+<a href='https://github.com/hashiz008'>hashiz008</a>

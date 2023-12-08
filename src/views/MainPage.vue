@@ -263,7 +263,7 @@ export default defineComponent({
 });
 
 function initMap(): void {
-    let imageNums: HTMLElement | any = document.getElementById("imgNums");
+    let imageNums: any = document.getElementById("imgNums");
     let btnNums: number | string = Number(
         imageNums.querySelector("h1").textContent.slice(8)
     );
@@ -292,7 +292,7 @@ function initMap(): void {
 }
 </script>
 
-<style scoped>
+<style scoped="ts">
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=M+PLUS+2:wght@700&family=Playfair+Display&display=swap");
 .backgroundDiv {
@@ -451,740 +451,125 @@ function initMap(): void {
     width: 100%;
     flex-shrink: 0;
 }
-@media screen and (max-width: 319px) {
-    .backImg {
-        height: 900px;
-    }
-    .title {
-        font-size: 35px;
-    }
-    .titleDiv {
-        padding-top: 1rem;
-    }
-    .imgNumsDisplay {
-        width: 13rem;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: "Luxurious Roman", cursive;
-        margin-top: 1rem;
-        overflow: hidden;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .imageDiv {
-        display: flex;
-        justify-content: center;
-    }
-    .images {
-        width: 15rem;
-        height: 9rem;
-        margin-top: 1rem;
-        border: double 14px #a55810;
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 14rem;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .threeBtnDisplay {
-        margin-top: -50px;
-        margin-left: -20px;
-    }
-    .twoBtnDisplay {
-        margin-top: -50px;
-        margin-left: 30px;
-    }
-    .fourBtnDisplay {
-        margin-top: -50px;
-        margin-left: 100px;
-    }
-    .fiveBtnDisplay {
-        margin-top: -50px;
-        margin-left: 220px;
-    }
-    .sevenBtnDisplay {
-        margin-top: -50px;
-        margin-left: 30px;
-    }
-    .eightBtnDisplay {
-        margin-top: -50px;
-        margin-left: -20px;
-    }
-    .nineBtnDisplay {
-        margin-top: -50px;
-        margin-left: 100px;
-    }
-    .zeroBtnDisplay {
-        margin-top: -50px;
-        margin-left: 220px;
-    }
-    .btnBackDisplay {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 15rem;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 6px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 5px solid #868888;
-        border-radius: 0;
-    }
-    .downloadBtn {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 16rem;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
+/* @media screen and (max-width: 319px) { */
+.backImg {
+    height: 900px;
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .backImg {
-        height: 920px;
-    }
-    .titleDiv {
-        padding-top: 1rem;
-    }
-    .title {
-        font-size: 40px;
-    }
-    .imgNumsDisplay {
-        margin-left: auto;
-        margin-right: auto;
-        font-family: "Luxurious Roman", cursive;
-        margin-top: 1rem;
-        overflow: hidden;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .imageDiv {
-        display: flex;
-        justify-content: center;
-    }
-    .images {
-        width: 15rem;
-        height: 9rem;
-        margin-top: 1rem;
-        border: double 14px #a55810;
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 16rem;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .twoBtnDisplay {
-        margin-top: -50px;
-        margin-left: 30px;
-    }
-    .threeBtnDisplay {
-        margin-top: -50px;
-        margin-left: -10px;
-    }
-    .fourBtnDisplay {
-        margin-top: -50px;
-        margin-left: 120px;
-    }
-    .fiveBtnDisplay {
-        margin-top: -50px;
-        margin-left: 250px;
-    }
-    .sevenBtnDisplay {
-        margin-top: -50px;
-        margin-left: 30px;
-    }
-    .eightBtnDisplay {
-        margin-top: -50px;
-        margin-left: -10px;
-    }
-    .nineBtnDisplay {
-        margin-top: -50px;
-        margin-left: 120px;
-    }
-    .zeroBtnDisplay {
-        margin-top: -50px;
-        margin-left: 250px;
-    }
-    .btnBackDisplay {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 16rem;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 6px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 5px solid #868888;
-        border-radius: 0;
-    }
-    .downloadBtn {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 330px;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
+.title {
+    font-size: 35px;
 }
-@media screen and (min-width: 481px) and (max-width: 585px) {
-    .backImg {
-        height: 920px;
-    }
-    .titleDiv {
-        padding-top: 1rem;
-    }
-    .title {
-        font-size: 40px;
-    }
-    .imgNumsDisplay {
-        width: 380px;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: "Luxurious Roman", cursive;
-        margin-top: 1rem;
-        overflow: hidden;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .imageDiv {
-        display: flex;
-        justify-content: center;
-    }
-    .images {
-        width: 19rem;
-        height: 11rem;
-        margin-top: 1rem;
-        border: double 14px #a55810;
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 19rem;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .oneBtnDisplay {
-        /* margin-top: -50px; */
-        margin-left: 20px;
-    }
-    .twoBtnDisplay {
-        margin-top: -50px;
-        margin-left: 20px;
-    }
-    .threeBtnDisplay {
-        margin-top: -50px;
-        /* margin-left: 0px; */
-    }
-    .fourBtnDisplay {
-        margin-top: -50px;
-        margin-left: 140px;
-    }
-    .fiveBtnDisplay {
-        margin-top: -50px;
-        margin-left: 290px;
-    }
-    .sixBtnDisplay {
-        margin-left: 20px;
-    }
-    .sevenBtnDisplay {
-        margin-top: -50px;
-        margin-left: 20px;
-    }
-    .eightBtnDisplay {
-        margin-top: -50px;
-    }
-    .nineBtnDisplay {
-        margin-top: -50px;
-        margin-left: 140px;
-    }
-    .zeroBtnDisplay {
-        margin-top: -50px;
-        margin-left: 290px;
-    }
-    .btnBackDisplay {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 19rem;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 6px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 5px solid #868888;
-        border-radius: 0;
-    }
-    .downloadBtn {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 380px;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
+.titleDiv {
+    padding-top: 1rem;
 }
-@media screen and (min-width: 586px) and (max-width: 768px) {
-    .backImg {
-        height: 900px;
-    }
-    .titleDiv {
-        padding-top: 4rem;
-        margin-right: 140px;
-        margin-right: 10%;
-    }
-    .title {
-        font-size: 35px;
-    }
-    .backImg {
-        padding-left: 50px;
-        display: flex;
-        justify-content: center;
-    }
-    .inStyle {
-        padding-left: 20px;
-    }
-    .images {
-        width: 270px;
-        height: 240px;
-        margin-top: 4rem;
-        border: double 14px #a55810;
-        margin-left: -50px;
-    }
-    .mapStyle {
-        margin-top: 50px;
-        width: 270px;
-        height: 260px;
-        border: double 14px #69635d;
-        margin-left: -50px;
-    }
-    .imgNumsDisplay {
-        width: 270px;
-        margin-left: 270px;
-        margin-top: -27rem;
-        font-family: "Luxurious Roman", cursive;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 270px;
-        margin-left: 270px;
-        margin-bottom: -10px;
-    }
-    .resultBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .resultBtn:active {
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
-        box-shadow: none;
-    }
-    .btnBackDisplay {
-        margin-left: 240px;
-        margin-top: 50px;
-        width: 300px;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 7px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 7px solid #868888;
-        border-radius: 0;
-    }
-    .twoBtnDisplay {
-        margin-top: -50px;
-        margin-left: 40px;
-    }
-    .threeBtnDisplay {
-        margin-top: -50px;
-        margin-left: -10px;
-    }
-    .fourBtnDisplay {
-        margin-top: -50px;
-        margin-left: 110px;
-    }
-    .fiveBtnDisplay {
-        margin-top: -50px;
-        margin-left: 230px;
-    }
-    .sevenBtnDisplay {
-        margin-top: -50px;
-        margin-left: 30px;
-    }
-    .eightBtnDisplay {
-        margin-top: -50px;
-        margin-left: -10px;
-    }
-    .nineBtnDisplay {
-        margin-top: -50px;
-        margin-left: 110px;
-    }
-    .zeroBtnDisplay {
-        margin-top: -50px;
-        margin-left: 230px;
-    }
-    .downBtnDisplay {
-        display: flex;
-        justify-content: start;
-        margin-top: -60px;
-    }
-    .downloadBtn {
-        margin-left: 230px;
-        margin-top: 90px;
-        width: 320px;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
-    .delBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .delBtn:active {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-        box-shadow: none;
-    }
+.imgNumsDisplay {
+    width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Luxurious Roman", cursive;
+    margin-top: 1rem;
+    overflow: hidden;
+    box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
 }
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-    .backImg {
-        height: 100vh;
-    }
-    .titleDiv {
-        padding-top: 2rem;
-        margin-right: 150px;
-    }
-    .title {
-        font-size: 40px;
-    }
-    .backImg {
-        padding-left: 70px;
-        display: flex;
-        justify-content: center;
-         height:1200px;
-    }
-    .inStyle {
-        padding-right: 10px;
-    }
-    .mapStyle {
-        margin-top: 20px;
-        margin-left: -40px;
-        width: 355px;
-        height: 270px;
-        border: double 14px #69635d;
-    }
-    .imgNumsDisplay {
-        margin-top: -30rem;
-        font-family: "Luxurious Roman", cursive;
-        margin-left: 370px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        width: 18rem;
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        margin-left: 370px;
-        margin-bottom: -10px;
-        width: 19rem;
-    }
-    .images {
-        width: 330px;
-        height: 300px;
-        margin-top: 2rem;
-        border: double 14px #a55810;
-        margin-left: -30px;
-    }
-    .resultBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .resultBtn:active {
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
-        box-shadow: none;
-    }
-    .btnBackDisplay {
-        margin-left: 370px;
-        margin-top: 50px;
-        width: 19rem;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 7px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 7px solid #868888;
-        border-radius: 0;
-    }
-    .downBtnDisplay {
-        display: flex;
-        justify-content: start;
-        margin-top: -60px;
-    }
-    .downloadBtn {
-        margin-left: 340px;
-        margin-top: 90px;
-        width: 21rem;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
-    .delBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .delBtn:active {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-        box-shadow: none;
-    }
+.imageDiv {
+    display: flex;
+    justify-content: center;
 }
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .titleDiv {
-        padding-top: 1rem;
-        margin-right: 140px;
-        margin-right: 10%;
-    }
-    .backImg {
-        display: flex;
-        justify-content: center;
-         height:1200px;
-    }
-    .inStyle {
-        padding-right: 50px;
-    }
-    .mapStyle {
-        margin-top: 40px;
-        margin-left: 40px;
-        width: 450px;
-        height: 330px;
-        border: double 14px #69635d;
-    }
-    .imgNumsDisplay {
-        width: 19rem;
-        margin-top: -34rem;
-        font-family: "Luxurious Roman", cursive;
-        margin-left: 600px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-    }
-    .imgDataDisplay {
-        overflow-x: auto;
-        white-space: nowrap;
-        margin-left: 600px;
-        margin-top: 40px;
-        width: 19rem;
-    }
-    .images {
-        width: 450px;
-        height: 330px;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        border: double 14px #a55810;
-    }
-    .resultBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .resultBtn:active {
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
-        box-shadow: none;
-    }
-    .btnBackDisplay {
-        margin-left: 560px;
-        margin-top: 50px;
-        width: 22rem;
-        height: 210px;
-        box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-        background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
-        border-top: 7px solid #d8dcdc;
-        border-right: 7px solid #666;
-        border-bottom: 8px solid #333;
-        border-left: 7px solid #868888;
-        border-radius: 0;
-    }
-    .downBtnDisplay {
-        display: flex;
-        justify-content: start;
-        margin-top: -60px;
-    }
-    .downloadBtn {
-        margin-left: 550px;
-        margin-top: 110px;
-        width: 23rem;
-        color: #000;
-        border-top: 10px solid #d8dcdc;
-        border-right: 10px solid #666;
-        border-bottom: 10px solid #333;
-        border-left: 10px solid #868888;
-        border-radius: 0;
-        background-image: -webkit-linear-gradient(
-            135deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        background-image: linear-gradient(
-            -45deg,
-            #333 0%,
-            #868888 20%,
-            #d8dcdc 34%,
-            white 53%,
-            #666 100%
-        );
-        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
-            0 0 5px #fff;
-    }
-    .downloadBtn:hover {
-        text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
-            0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
-    }
-    .delBtn {
-        box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
-    }
-    .delBtn:active {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
-        box-shadow: none;
-    }
+.images {
+    width: 15rem;
+    height: 9rem;
+    margin-top: 1rem;
+    border: double 14px #a55810;
 }
-@media screen and (min-width: 1201px) {
+.imgDataDisplay {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
+}
+.threeBtnDisplay {
+    margin-top: -50px;
+    margin-left: -20px;
+}
+.twoBtnDisplay {
+    margin-top: -50px;
+    margin-left: 30px;
+}
+.fourBtnDisplay {
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.fiveBtnDisplay {
+    margin-top: -50px;
+    margin-left: 220px;
+}
+.sevenBtnDisplay {
+    margin-top: -50px;
+    margin-left: 30px;
+}
+.eightBtnDisplay {
+    margin-top: -50px;
+    margin-left: -20px;
+}
+.nineBtnDisplay {
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.zeroBtnDisplay {
+    margin-top: -50px;
+    margin-left: 220px;
+}
+.btnBackDisplay {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 15rem;
+    height: 210px;
+    box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
+    background-image: url("https://www.wallpaper-box.com/smartphone/wp-content/uploads/2012/12/feb83ee5f79ad3cecedd43ea454b3961.jpg");
+    border-top: 7px solid #d8dcdc;
+    border-right: 6px solid #666;
+    border-bottom: 8px solid #333;
+    border-left: 5px solid #868888;
+    border-radius: 0;
+}
+.downloadBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 16rem;
+    color: #000;
+    border-top: 10px solid #d8dcdc;
+    border-right: 10px solid #666;
+    border-bottom: 10px solid #333;
+    border-left: 10px solid #868888;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(
+        135deg,
+        #333 0%,
+        #868888 20%,
+        #d8dcdc 34%,
+        white 53%,
+        #666 100%
+    );
+    background-image: linear-gradient(
+        -45deg,
+        #333 0%,
+        #868888 20%,
+        #d8dcdc 34%,
+        white 53%,
+        #666 100%
+    );
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+        0 0 5px #fff;
+}
+.downloadBtn:hover {
+    text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff,
+        0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
+}
+
+@media screen and (min-width: 600px) {
     .titleDiv {
         padding-top: 3rem;
         margin-right: 20%;
@@ -1192,7 +577,7 @@ function initMap(): void {
     .backImg {
         display: flex;
         justify-content: center;
-        height:1200px;
+        height: 1200px;
     }
     .inStyle {
         padding-left: 150px;

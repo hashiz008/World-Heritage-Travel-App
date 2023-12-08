@@ -43,112 +43,118 @@
                     </div>
                 </div>
                 <div id="nums" class="btnBackDisplay">
-                    <div class="oneBtnDisplay pt-2">
-                        <button
-                            class="font-medium text-white onesBtn text-3xl text-white bg-blue-700 rounded-full w-10 h-10"
-                            @click="number += '1'"
-                            value="one"
-                        >
-                            1
-                        </button>
+                    <div class="btnRow1">
+                        <div class="oneBtnDisplay pt-2">
+                            <button
+                                class="font-medium text-white onesBtn text-3xl text-white bg-blue-700 rounded-full w-10 h-10"
+                                @click="number += '1'"
+                                value="one"
+                            >
+                                1
+                            </button>
+                        </div>
+                        <div class="twoBtnDisplay">
+                            <button
+                                class="twoBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '2'"
+                                value="2"
+                            >
+                                2
+                            </button>
+                        </div>
+                        <div class="threeBtnDisplay">
+                            <button
+                                class="threeBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '3'"
+                                value="3"
+                            >
+                                3
+                            </button>
+                        </div>
+                        <div class="fourBtnDisplay">
+                            <button
+                                class="fourBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '4'"
+                                value="4"
+                            >
+                                4
+                            </button>
+                        </div>
+                        <div class="fiveBtnDisplay">
+                            <button
+                                class="fiveBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '5'"
+                                value="5"
+                            >
+                                5
+                            </button>
+                        </div>
                     </div>
-                    <div class="twoBtnDisplay">
-                        <button
-                            class="twoBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '2'"
-                            value="2"
-                        >
-                            2
-                        </button>
+                    <div class="btnRow2">
+                        <div class="sixBtnDisplay">
+                            <button
+                                class="sixBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '6'"
+                                value="6"
+                            >
+                                6
+                            </button>
+                        </div>
+                        <div class="sevenBtnDisplay">
+                            <button
+                                class="sevenBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '7'"
+                                value="7"
+                            >
+                                7
+                            </button>
+                        </div>
+                        <div class="eightBtnDisplay mr-1">
+                            <button
+                                class="eightBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '8'"
+                                value="8"
+                            >
+                                8
+                            </button>
+                        </div>
+                        <div class="nineBtnDisplay">
+                            <button
+                                class="nineBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '9'"
+                                value="9"
+                            >
+                                9
+                            </button>
+                        </div>
+                        <div class="zeroBtnDisplay">
+                            <button
+                                class="zeroBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
+                                @click="number += '0'"
+                                value="0"
+                            >
+                                0
+                            </button>
+                        </div>
                     </div>
-                    <div class="threeBtnDisplay">
-                        <button
-                            class="threeBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '3'"
-                            value="3"
-                        >
-                            3
-                        </button>
-                    </div>
-                    <div class="fourBtnDisplay">
-                        <button
-                            class="fourBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '4'"
-                            value="4"
-                        >
-                            4
-                        </button>
-                    </div>
-                    <div class="fiveBtnDisplay">
-                        <button
-                            class="fiveBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '5'"
-                            value="5"
-                        >
-                            5
-                        </button>
-                    </div>
-                    <div class="sixBtnDisplay mr-64">
-                        <button
-                            class="sixBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '6'"
-                            value="6"
-                        >
-                            6
-                        </button>
-                    </div>
-                    <div class="sevenBtnDisplay">
-                        <button
-                            class="sevenBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '7'"
-                            value="7"
-                        >
-                            7
-                        </button>
-                    </div>
-                    <div class="eightBtnDisplay mr-1">
-                        <button
-                            class="eightBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '8'"
-                            value="8"
-                        >
-                            8
-                        </button>
-                    </div>
-                    <div class="nineBtnDisplay">
-                        <button
-                            class="nineBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '9'"
-                            value="9"
-                        >
-                            9
-                        </button>
-                    </div>
-                    <div class="zeroBtnDisplay">
-                        <button
-                            class="zeroBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
-                            @click="number += '0'"
-                            value="0"
-                        >
-                            0
-                        </button>
-                    </div>
-                    <div class="resultBtnDisplay mr-32 mt-3">
-                        <button
-                            class="resultBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
-                            @click="result"
-                            :disabled="resDis"
-                        >
-                            Result
-                        </button>
-                    </div>
-                    <div class="delBtnDisplay ml-32">
-                        <button
-                            class="delBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
-                            @click="del"
-                        >
-                            Del
-                        </button>
+                    <div class="btnRow3">
+                        <div class="resultBtnDisplay mt-3">
+                            <button
+                                class="resultBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
+                                @click="result"
+                                :disabled="resDis"
+                            >
+                                Result
+                            </button>
+                        </div>
+                        <div class="delBtnDisplay">
+                            <button
+                                class="delBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
+                                @click="del"
+                            >
+                                Del
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div id="downloadDiv" class="downBtnDisplay">
@@ -310,7 +316,7 @@ function initMap(): void {
     height: 820px;
 }
 .oneBtnDisplay {
-    margin-right: 16rem;
+    /* margin-right: 16rem; */
 }
 .onesBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -321,8 +327,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .twoBtnDisplay {
-    margin-top: -50px;
-    margin-right: 8rem;
+    /* margin-top: -50px;
+    margin-right: 8rem; */
 }
 .twoBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -333,8 +339,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .threeBtnDisplay {
-    margin-top: -50px;
-    margin-left: -1px;
+    /* margin-top: -50px;
+    margin-left: -1px; */
 }
 .threeBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -345,8 +351,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .fourBtnDisplay {
-    margin-top: -50px;
-    margin-left: 8rem;
+    /* margin-top: -50px;
+    margin-left: 8rem; */
 }
 .fourBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -357,8 +363,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .fiveBtnDisplay {
-    margin-top: -50px;
-    margin-left: 16rem;
+    /* margin-top: -50px;
+    margin-left: 16rem; */
 }
 .fiveBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -369,7 +375,7 @@ function initMap(): void {
     box-shadow: none;
 }
 .sixBtnDisplay {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .sixBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -380,8 +386,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .sevenBtnDisplay {
-    margin-top: -50px;
-    margin-right: 8rem;
+    /* margin-top: -50px;
+    margin-right: 8rem; */
 }
 .sevenBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -392,8 +398,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .eightBtnDisplay {
-    margin-top: -50px;
-    margin-right: 1px;
+    /* margin-top: -50px;
+    margin-right: 1px; */
 }
 .eightBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -404,8 +410,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .nineBtnDisplay {
-    margin-top: -50px;
-    margin-left: 8rem;
+    /* margin-top: -50px;
+    margin-left: 8rem; */
 }
 .nineBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -416,8 +422,8 @@ function initMap(): void {
     box-shadow: none;
 }
 .zeroBtnDisplay {
-    margin-top: -50px;
-    margin-left: 16rem;
+    /* margin-top: -50px;
+    margin-left: 16rem; */
 }
 .zeroBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -487,38 +493,6 @@ function initMap(): void {
     margin-left: auto;
     margin-right: auto;
     box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
-}
-.threeBtnDisplay {
-    margin-top: -50px;
-    margin-left: -20px;
-}
-.twoBtnDisplay {
-    margin-top: -50px;
-    margin-left: 30px;
-}
-.fourBtnDisplay {
-    margin-top: -50px;
-    margin-left: 100px;
-}
-.fiveBtnDisplay {
-    margin-top: -50px;
-    margin-left: 220px;
-}
-.sevenBtnDisplay {
-    margin-top: -50px;
-    margin-left: 30px;
-}
-.eightBtnDisplay {
-    margin-top: -50px;
-    margin-left: -20px;
-}
-.nineBtnDisplay {
-    margin-top: -50px;
-    margin-left: 100px;
-}
-.zeroBtnDisplay {
-    margin-top: -50px;
-    margin-left: 220px;
 }
 .btnBackDisplay {
     margin-left: auto;
@@ -603,8 +577,8 @@ function initMap(): void {
         width: 22rem;
     }
     .imageDiv {
-      display:flex;
-      justify-content: start;
+        display: flex;
+        justify-content: start;
     }
     .images {
         width: 500px;
@@ -621,7 +595,8 @@ function initMap(): void {
         box-shadow: none;
     }
     .btnBackDisplay {
-        margin-left: 530px;
+        margin-right: 10px;
+        display: flex;
         margin-top: 60px;
         width: 23rem;
         height: 210px;
@@ -635,12 +610,10 @@ function initMap(): void {
     }
     .downBtnDisplay {
         display: flex;
-        justify-content: start;
-        margin-top: -60px;
     }
     .downloadBtn {
         margin-left: 530px;
-        margin-top: 130px;
+        margin-top: 50px;
         width: 23rem;
         color: #000;
         border-top: 10px solid #d8dcdc;

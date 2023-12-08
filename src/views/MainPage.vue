@@ -451,7 +451,7 @@ function initMap(): void {
     width: 100%;
     flex-shrink: 0;
 }
-/* @media screen and (max-width: 319px) { */
+
 .backImg {
     height: 900px;
 }
@@ -577,14 +577,12 @@ function initMap(): void {
     .backImg {
         display: flex;
         justify-content: center;
-        height: 1200px;
     }
     .inStyle {
         padding-left: 150px;
     }
     .mapStyle {
         margin-top: 20px;
-        margin-left: -70px;
         width: 500px;
         height: 330px;
         border: double 14px #69635d;
@@ -605,7 +603,8 @@ function initMap(): void {
         width: 22rem;
     }
     .imageDiv {
-        margin-left: -3rem;
+      display:flex;
+      justify-content: start;
     }
     .images {
         width: 500px;

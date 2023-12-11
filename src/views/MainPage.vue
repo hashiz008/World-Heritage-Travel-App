@@ -89,8 +89,6 @@
                                 5
                             </button>
                         </div>
-                    </div>
-                    <div class="btnRow2">
                         <div class="sixBtnDisplay">
                             <button
                                 class="sixBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
@@ -109,7 +107,7 @@
                                 7
                             </button>
                         </div>
-                        <div class="eightBtnDisplay mr-1">
+                        <div class="eightBtnDisplay">
                             <button
                                 class="eightBtn font-medium text-3xl rounded-full text-white bg-blue-700 w-10 h-10"
                                 @click="number += '8'"
@@ -138,7 +136,7 @@
                         </div>
                     </div>
                     <div class="btnRow3">
-                        <div class="resultBtnDisplay mt-3">
+                        <div class="resultBtnDisplay">
                             <button
                                 class="resultBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
                                 @click="result"
@@ -147,7 +145,7 @@
                                 Result
                             </button>
                         </div>
-                        <div class="delBtnDisplay">
+                        <div class="delBtnDisplay pt-10">
                             <button
                                 class="delBtn rounded-lg font-medium text-2xl text-white bg-blue-700 w-20 h-9"
                                 @click="del"
@@ -316,7 +314,6 @@ function initMap(): void {
     height: 820px;
 }
 .oneBtnDisplay {
-    /* margin-right: 16rem; */
 }
 .onesBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -327,8 +324,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .twoBtnDisplay {
-    /* margin-top: -50px;
-    margin-right: 8rem; */
 }
 .twoBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -339,8 +334,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .threeBtnDisplay {
-    /* margin-top: -50px;
-    margin-left: -1px; */
 }
 .threeBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -351,8 +344,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .fourBtnDisplay {
-    /* margin-top: -50px;
-    margin-left: 8rem; */
 }
 .fourBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -363,8 +354,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .fiveBtnDisplay {
-    /* margin-top: -50px;
-    margin-left: 16rem; */
 }
 .fiveBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -375,7 +364,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .sixBtnDisplay {
-    /* margin-top: 20px; */
 }
 .sixBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -386,8 +374,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .sevenBtnDisplay {
-    /* margin-top: -50px;
-    margin-right: 8rem; */
 }
 .sevenBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -398,8 +384,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .eightBtnDisplay {
-    /* margin-top: -50px;
-    margin-right: 1px; */
 }
 .eightBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -410,8 +394,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .nineBtnDisplay {
-    /* margin-top: -50px;
-    margin-left: 8rem; */
 }
 .nineBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -422,8 +404,6 @@ function initMap(): void {
     box-shadow: none;
 }
 .zeroBtnDisplay {
-    /* margin-top: -50px;
-    margin-left: 16rem; */
 }
 .zeroBtn {
     box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
@@ -494,6 +474,14 @@ function initMap(): void {
     margin-right: auto;
     box-shadow: inset 8px 8px 8px 8px rgba(0, 0, 0, 0.06);
 }
+.btnRow1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btnRow3 {
+    display: flex;
+} 
 .btnBackDisplay {
     margin-left: auto;
     margin-right: auto;
@@ -585,6 +573,14 @@ function initMap(): void {
         height: 330px;
         margin-top: 2rem;
         border: double 14px #a55810;
+    }
+    .btnRow1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btnRow3 {
+        display: flex;
+        flex-wrap: wrap;
     }
     .resultBtn {
         box-shadow: 1px 15px 5px -5px rgba(0, 0, 0, 0.25);
